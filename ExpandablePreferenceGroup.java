@@ -9,6 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.preference.PreferenceGroup;
 import androidx.preference.PreferenceViewHolder;
@@ -83,8 +84,8 @@ public class ExpandablePreferenceGroup extends PreferenceGroup {
     public void onBindViewHolder(PreferenceViewHolder holder) {
         super.onBindViewHolder(holder);
 
-        BreezeTextView titleView = (BreezeTextView) holder.findViewById(R.id.title);
-        BreezeTextView countView = (BreezeTextView) holder.findViewById(R.id.count);
+        AppCompatTextView titleView = (AppCompatTextView) holder.findViewById(R.id.title);
+        AppCompatTextView countView = (AppCompatTextView) holder.findViewById(R.id.count);
         AppCompatImageView arrow = (AppCompatImageView) holder.findViewById(R.id.arrow);
         View header = holder.itemView;
 
@@ -119,7 +120,7 @@ public class ExpandablePreferenceGroup extends PreferenceGroup {
         arrow.animate().rotation(expanded ? 180 : 0).setDuration(200).start();
     }
 
-    private void animateCount(BreezeTextView count, boolean expanded) {
+    private void animateCount(AppCompatTextView count, boolean expanded) {
         count.animate().alpha(expanded ? 1 : 0).setDuration(200);
     }
 
