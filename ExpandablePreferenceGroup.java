@@ -16,6 +16,12 @@ import androidx.preference.PreferenceViewHolder;
 
 import com.gocalsd.xyz.R;
 
+/**
+ * Created by Ryan Gocal on 5/10/25
+ * In your preference xml, wrap this custom group around a set of similar preferences to clean up your space
+ * Call the Preference Group from your Preference Activity or Fragment to setup a listener on expanded
+ */
+
 public class ExpandablePreferenceGroup extends PreferenceGroup {
     private boolean expanded = false;
     private CharSequence title;
