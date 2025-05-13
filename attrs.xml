@@ -1,0 +1,3 @@
+ <declare-styleable name="ExpandablePreferenceGroup">
+        <attr name="android:title" />
+    </declare-styleable>
