@@ -2,7 +2,7 @@
 A custom preference group that expands on click to hide and unhide similar preferences in a group. The preference group can be given a custom title, show how many preferences are hidden and show an animated arrow to indicate the expansion logic.
 
 
-    <com.gocalsd.carpenter.views.ExpandablePreferenceGroup
+    <com.gocalsd.xyz.ExpandablePreferenceGroup
         android:key="group"
         android:title="Details">
           
@@ -14,7 +14,7 @@ A custom preference group that expands on click to hide and unhide similar prefe
             android:title="Preference"
             android:key="pref"
             />
-    </com.gocalsd.carpenter.views.ExpandablePreferenceGroup>
+    </com.gocalsd.xyz.ExpandablePreferenceGroup>
 
 Add a listener to your expanble group by calling the preference group key in your activity or preference fragment and set the listener
 
